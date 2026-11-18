@@ -26,11 +26,14 @@ OUT = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
 
 
 def main():
+    src = os.path.join(HERE, "entry.png")
+    dst = os.path.join(OUT, "entry.png")
     os.makedirs(OUT, exist_ok=True)
-    shutil.copyfile(
-        os.path.join(HERE, "entry.png"),
-        os.path.join(OUT, "entry.png"),
-    )
+    shutil.copyfile(src, dst)
+    # Both graded runs must write the same bytes: fail loudly instead of
+    # leaving a partial or mismatched file behind.
+    if os.path.getsize(dst) != os.path.getsize(src):
+        raise SystemExit("entry.png copy mismatch: %s != %s" % (dst, src))
 
 
 if __name__ == "__main__":
