@@ -1,5 +1,11 @@
 # Wednesday 18 November 2026 in one image — round 1
 
+[![make.fun · news-image-20261118](https://make.fun/badge/news-image-20261118.svg)](https://make.fun/bounty/news-image-20261118?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261118)
+[![rank](https://make.fun/badge/news-image-20261118/bonjoves444-ux/news-image-20261118-entry/rank.svg)](https://make.fun/bounty/news-image-20261118/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261118)
+[![reward](https://make.fun/badge/news-image-20261118/bonjoves444-ux/news-image-20261118-entry/reward.svg)](https://make.fun/bounty/news-image-20261118?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261118)
+
+Entry for the [make.fun bounty "Sum up 18 November's world news in one image"](https://make.fun/bounty/news-image-20261118).
+
 A broadsheet summing up the world's news of Wednesday 18 November 2026:
 35 verified stories across 6 continents, in the format the day's winning
 broadsheets use — a dated masthead, three illustrated lead stories, six more
