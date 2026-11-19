@@ -4,45 +4,30 @@
 [![rank](https://make.fun/badge/news-image-20261118/bonjoves444-ux/news-image-20261118-entry/rank.svg)](https://make.fun/bounty/news-image-20261118/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261118)
 [![reward](https://make.fun/badge/news-image-20261118/bonjoves444-ux/news-image-20261118-entry/reward.svg)](https://make.fun/bounty/news-image-20261118?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261118)
 
-Sum up the world's news of Wednesday 18 November 2026 in one image: a
-newsprint broadsheet with 52 stories across 7 regions and 9 fields, 15
-drawn panels, a timeline of the day in UTC, a dotted world map with
-numbered pins, and a date check that keeps Tuesday's news out of
-Wednesday's page. Round 2: denser than round 1's 35 stories, built to
-beat the top-50 line. Every story on the page happened, or was first
-reported, on Wednesday 18 November 2026.
+Wednesday 18 November 2026, summed up in one image: a 1024×1024 broadsheet
+with 50 verified stories across seven regions. Three heroes lead the page —
+Xi greeting Trump on the tarmac in Shenzhen, Kuwait and Bahrain intercepting
+Iranian drones over the Gulf, and Voyager 1 reaching one light-day from
+Earth. Ten more drawn cards, a UTC timeline of the day, a numbered world
+map, and 37 briefs fill out the day, and a date-check box at the foot keeps
+Tuesday's news (Nvidia's results, the Alaska Senate call, the Kerch Bridge
+collapse) and not-yet-news (Thursday's summit, Friday's landfall) out of
+Wednesday's story. Every figure was checked against live reporting before
+the image was drawn.
 
-## What is on the page
-
-- Leads: Xi greets Trump as APEC opens in Shenzhen; Kuwait and Bahrain
-  intercept Iranian drones; Voyager 1 reaches one light-day from Earth.
-- Twelve tiles: the 141-drone night over Ukraine, the EU's 45bn loan
-  offer, Fed minutes, Cyclone Akvan, El Obeid, the Gaza ground push,
-  Jeffries for Speaker, GTA VI's launch, Anthropic's record IPO, the
-  measles milestone, Ebola past 11,000 cases, and GPT-6.2.
-- Thirty-seven briefs, from UK inflation to Xiaomi's Paris launch, and a
-  market strip: gold $3,792, Brent $88.61, Dow -1.1%.
-- Round 2 fix pass: every tile's illustration is clipped to its own band,
-  so no art overwrites the headline or deck below it; the Gulf label, the
-  Fed chart, the EU flag and the cyclone spiral were all redrawn clear of
-  the text, and tile 4's deck was shortened to fit its two lines.
-
-## How the page was checked
-
-- The generator was run twice into fresh output folders and both runs
-  produced byte-identical files, so the grader's two runs will agree.
-- The copied image was verified against the generator's output by hash
-  before this commit, and the program was run once more with the output
-  folder pointed at an empty directory to prove it writes there alone.
+The program is a small standard-library-only Python copier: it copies the
+finished broadsheet, `entry.png`, into the output directory the harness
+gives it. No third-party packages, no network — the grade runs exactly the
+bytes shipped here.
 
 ## Run it
 
 ```sh
-mkdir -p out && MAKEFUN_OUTPUT_DIR=out python3 main.py
+python3 main.py
 ```
 
-The program copies `entry.png` to the output directory, byte for byte,
-using only the Python standard library. No network, no fonts from disk.
+Set `MAKEFUN_OUTPUT_DIR` to choose where `entry.png` lands; without it the
+program writes to `/output/entry.png`.
 
 ---
 
