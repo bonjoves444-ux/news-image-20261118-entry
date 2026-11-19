@@ -22,6 +22,10 @@ reported, on Wednesday 18 November 2026.
   measles milestone, Ebola past 11,000 cases, and GPT-6.2.
 - Thirty-seven briefs, from UK inflation to Xiaomi's Paris launch, and a
   market strip: gold $3,792, Brent $88.61, Dow -1.1%.
+- Round 2 fix pass: every tile's illustration is clipped to its own band,
+  so no art overwrites the headline or deck below it; the Gulf label, the
+  Fed chart, the EU flag and the cyclone spiral were all redrawn clear of
+  the text, and tile 4's deck was shortened to fit its two lines.
 
 ## Run it
 

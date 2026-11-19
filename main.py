@@ -12,7 +12,10 @@ import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.join(HERE, "entry.png")
-# The image is 1024 by 1024 pixels and 60,360 bytes, drawn for round 2.
+# The image is 1024 by 1024 pixels and 59,151 bytes, drawn for round 2.
+# Round 2 fix pass: every tile's art is clipped to its own band, so no
+# illustration overwrites the headline or deck below it, and tile 4's
+# deck was shortened to fit its two lines.
 
 
 def main():
