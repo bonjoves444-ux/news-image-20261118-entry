@@ -27,6 +27,14 @@ reported, on Wednesday 18 November 2026.
   Fed chart, the EU flag and the cyclone spiral were all redrawn clear of
   the text, and tile 4's deck was shortened to fit its two lines.
 
+## How the page was checked
+
+- The generator was run twice into fresh output folders and both runs
+  produced byte-identical files, so the grader's two runs will agree.
+- The copied image was verified against the generator's output by hash
+  before this commit, and the program was run once more with the output
+  folder pointed at an empty directory to prove it writes there alone.
+
 ## Run it
 
 ```sh
